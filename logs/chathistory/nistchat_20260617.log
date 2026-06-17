@@ -1,0 +1,38 @@
+2026-06-17 17:02:41,855 | INFO | Initializing Dense Retrieval Layer (FAISS)...
+2026-06-17 17:02:43,621 | INFO | Extracting index fragments to construct Sparse Retrieval Layer (BM25)...
+2026-06-17 17:02:43,759 | INFO | Loading parent store...
+2026-06-17 17:02:43,814 | INFO | Parent store loaded: 1473 records.
+2026-06-17 17:02:43,814 | INFO | Loading cross-encoder reranker...
+2026-06-17 17:02:49,370 | INFO | Cross-encoder ready: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-17 17:02:49,371 | INFO | Engine ready — 1473 child chunks, 1473 parent records in 7.51s.
+2026-06-17 17:02:49,371 | INFO | Reader model: qwen2.5:3b
+2026-06-17 17:02:49,458 | INFO | Loaded 7 topic categories from questions_config.json
+2026-06-17 17:02:50,151 | INFO | Starting Gradio UI on port 7860 (share=False)
+2026-06-17 17:03:14,118 | INFO | Direct answer served for: 'Provide me an overview of attacks grouped by predictive and generative AI.'
+2026-06-17 17:04:18,616 | WARNING | Memory ceiling met. Gracefully truncating history.
+2026-06-17 17:04:18,616 | INFO | User Query: What is ... and how does it affect the AI system?
+2026-06-17 17:04:27,681 | INFO | Cross-encoder reranked 10 candidates → top 6
+2026-06-17 17:04:27,682 | INFO | Generator: Processing context + RRF rankings...
+2026-06-17 17:05:18,766 | INFO | _classify_query_risk → LOW
+2026-06-17 17:05:18,768 | INFO | Query Complete | Total Latency: 60.15s | Hybrid Retrieval Match (R): 9.06s | LLM Generation Inference (G): 51.08s
+2026-06-17 17:06:16,251 | WARNING | Memory ceiling met. Gracefully truncating history.
+2026-06-17 17:06:16,252 | INFO | User Query: What are open challenges of defending AI attacks?
+2026-06-17 17:06:17,816 | INFO | Cross-encoder reranked 10 candidates → top 6
+2026-06-17 17:06:17,817 | INFO | Generator: Processing context + RRF rankings...
+2026-06-17 17:07:11,911 | INFO | _classify_query_risk → LOW
+2026-06-17 17:07:11,911 | INFO | Query Complete | Total Latency: 55.66s | Hybrid Retrieval Match (R): 1.56s | LLM Generation Inference (G): 54.09s
+2026-06-17 17:25:27,213 | INFO | Initializing Dense Retrieval Layer (FAISS)...
+2026-06-17 17:25:28,562 | INFO | Extracting index fragments to construct Sparse Retrieval Layer (BM25)...
+2026-06-17 17:25:28,703 | INFO | Loading parent store...
+2026-06-17 17:25:28,738 | INFO | Parent store loaded: 1473 records.
+2026-06-17 17:25:28,739 | INFO | Loading cross-encoder reranker...
+2026-06-17 17:25:34,060 | INFO | Cross-encoder ready: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-06-17 17:25:34,061 | INFO | Engine ready — 1473 child chunks, 1473 parent records in 6.85s.
+2026-06-17 17:25:34,061 | INFO | Reader model: qwen2.5:3b
+2026-06-17 17:25:34,091 | INFO | Loaded 7 topic categories from questions_config.json
+2026-06-17 17:25:34,662 | INFO | Starting Gradio UI on port 7860 (share=False)
+2026-06-17 17:25:56,024 | INFO | User Query: Define each monitoring category for deployed AI systems: functionality, operational, human factors, security, compliance and large scale monitoring.
+2026-06-17 17:26:01,394 | INFO | Cross-encoder reranked 10 candidates → top 6
+2026-06-17 17:26:01,395 | INFO | Generator: Processing context + RRF rankings...
+2026-06-17 17:26:56,674 | INFO | _classify_query_risk → LOW
+2026-06-17 17:26:56,675 | INFO | Query Complete | Total Latency: 60.65s | Hybrid Retrieval Match (R): 5.37s | LLM Generation Inference (G): 55.28s

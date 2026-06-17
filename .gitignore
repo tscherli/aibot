@@ -30,8 +30,8 @@ READold.me
 # Claude Code internal files
 .claude/
 
-# Log files (all of them)
-*.log
+# Log files (nistchat.log in root)
+nistchat.log
 
 # VS Code workspace settings
 .vscode/
