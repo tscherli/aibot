@@ -1,0 +1,44 @@
+# Virtual environment
+.venv/
+
+# Large data and model files
+data/04_vector_storage/index.faiss
+data/04_vector_storage/index.pkl
+data/04_vector_storage/child_store.jsonl
+tests/parent_store.json
+
+# Raw PDFs (large binaries)
+data/01_raw_pdf/
+
+# Logs
+logs/
+rag.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment / secrets
+.env
+*.bat
+
+# Never commit — contains API key and personal notes
+READold.me
+
+# Claude Code internal files
+.claude/
+
+# Log files (all of them)
+*.log
+
+# VS Code workspace settings
+.vscode/
+
+# Session notes
+ai_sum2.md
+
+# Trivial utility
+sys.py
