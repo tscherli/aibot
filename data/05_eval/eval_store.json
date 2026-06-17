@@ -1,0 +1,223 @@
+[
+  {
+    "question_category": "factual",
+    "question": "What are the four core functions of the AI RMF described in Part 2 of NIST AI 100-1?",
+    "expected_answer": "The four core functions are GOVERN, MAP, MEASURE, and MANAGE. GOVERN applies to all stages of an organization's AI risk management processes and procedures, while MAP, MEASURE, and MANAGE can be applied in AI system-specific contexts and at specific stages of the AI lifecycle.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "section_title": "Executive Summary",
+        "raw_text": "Part 2 comprises the 'Core' of the Framework. It describes four specific functions to help organizations address the risks of AI systems in practice. These functions GOVERN, MAP, MEASURE, and MANAGE - are broken down further into categories and subcategories. While GOVERN applies to all stages of organizations' AI risk management processes and procedures, the MAP, MEASURE, and MANAGE functions can be applied in AI system-specific contexts and at specific stages of the AI lifecycle."
+      }
+    ]
+  },
+  {
+    "question_category": "reasoning",
+    "question": "Why does NIST AI 100-1 argue that AI systems present risks that are fundamentally different from those of traditional software systems?",
+    "expected_answer": "The framework highlights several reasons: AI systems may be trained on data that can change over time in significant and unexpected ways, affecting trustworthiness in ways that are hard to understand. The contexts in which AI systems are deployed are frequently complex, making failures difficult to detect. Crucially, AI systems are described as inherently socio-technical — meaning their risks emerge from the interplay of technical aspects and societal factors such as how a system is used, who operates it, and the social context of deployment. These dimensions do not apply to traditional software in the same way.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "section_title": "Executive Summary",
+        "raw_text": "While there are myriad standards and best practices to help organizations mitigate the risks of traditional software or information-based systems, the risks posed by AI systems are in many ways unique. AI systems, for example, may be trained on data that can change over time, sometimes significantly and unexpectedly, affecting system functionality and trustworthiness in ways that are hard to understand. AI systems and the contexts in which they are deployed are frequently complex, making it difficult to detect and respond to failures when they occur. AI systems are inherently socio-technical in nature, meaning they are influenced by societal dynamics and human behavior. AI risks - and benefits can emerge from the interplay of technical aspects combined with societal factors related to how a system is used, its interactions with other AI systems, who operates it, and the social context in which it is deployed."
+      }
+    ]
+  },
+  {
+    "question_category": "edge-case",
+    "question": "According to NIST AI 100-1, when a user asks 'what happened in the system,' 'how was a decision made,' and 'why was a decision made,' which AI trustworthiness property answers each question?",
+    "expected_answer": "Transparency answers 'what happened' in the system. Explainability answers 'how' a decision was made in the system. Interpretability answers 'why' a decision was made by the system and its meaning or context to the user. The document emphasizes these are distinct characteristics that support each other.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "section_title": "3.5 Explainable and Interpretable",
+        "raw_text": "Transparency, explainability, and interpretability are distinct characteristics that support each other. Transparency can answer the question of 'what happened' in the system. Explainability can answer the question of 'how' a decision was made in the system. Interpretability can answer the question of 'why' a decision was made by the system and its meaning or context to the user."
+      }
+    ]
+  },
+  {
+    "question_category": "factual",
+    "question": "What five dimensions does NIST AI 100-2e2023 use to define its taxonomy of adversarial machine learning (AML) risk assessment?",
+    "expected_answer": "The five dimensions are: (i) AI system type (Predictive or Generative), (ii) learning method and stage of the ML lifecycle process when the attack is mounted, (iii) attacker goals and objectives, (iv) attacker capabilities, and (v) attacker knowledge of the learning process and beyond.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-2e2023 NIST Trustworthy and Responsible AI",
+        "section_title": "Executive Summary",
+        "raw_text": "Correspondingly, the taxonomy of AML is defined with respect to the following five dimensions of AML risk assessment: (i) AI system type (Predictive or Generative), (ii) learning method and stage of the ML lifecycle process when the attack is mounted, (iii) attacker goals and objectives, (iv) attacker capabilities, (v) and attacker knowledge of the learning process and beyond."
+      }
+    ]
+  },
+  {
+    "question_category": "ambiguity",
+    "question": "What is the key operational difference between an availability poisoning attack and a targeted poisoning attack on a machine learning model?",
+    "expected_answer": "Availability poisoning attacks indiscriminately affect the entire ML model, essentially causing a denial-of-service for all users of the system. Targeted poisoning attacks, by contrast, induce a change in the model's prediction for only a small number of specific, attacker-selected samples without broadly degrading overall model performance. The document notes that targeted attacks are mostly studied in the 'clean-label' setting where the attacker does not have access to the labeling function.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-2e2023 NIST Trustworthy and Responsible AI",
+        "section_title": "2.3.1. Availability Poisoning",
+        "raw_text": "The first poisoning attacks discovered in cybersecurity applications were availability attacks against worm signature generation and spam classifiers, which indiscriminately impact the entire machine learning model and, in essence, cause a denial-of-service attack on users of the AI system."
+      },
+      {
+        "document_title": "NIST AI 100-2e2023 NIST Trustworthy and Responsible AI",
+        "section_title": "2.3.2. Targeted Poisoning",
+        "raw_text": "In contrast to availability attacks, targeted poisoning attacks induce a change in the ML model's prediction on a small number of targeted samples. If the adversary can control the labeling function of the training data, then label flipping is an effective targeted poisoning attack."
+      }
+    ]
+  },
+  {
+    "question_category": "factual",
+    "question": "Which executive order directed NIST to create a plan for global engagement on AI standards, and what specific task did it assign?",
+    "expected_answer": "President Biden's October 2023 Executive Order 14110 on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence directed this. Specifically, the EO tasked the Secretary of Commerce to establish a plan for global engagement on promoting and developing AI standards, guided by principles in the NIST AI Risk Management Framework and the U.S. Government National Standards Strategy for Critical and Emerging Technology (NSSCET).",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-5 A Plan for Global Engagement on AI Standards",
+        "section_title": "1. Executive Summary",
+        "raw_text": "Recognizing the importance of technical standards in shaping development and use of Artificial Intelligence (AI), the President's October 2023 Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (EO 14110) calls for 'a coordinated effort…to drive the development and implementation of AI-related consensus standards, cooperation and coordination, and information sharing' internationally. Specifically, the EO tasks the Secretary of Commerce to 'establish a plan for global engagement on promoting and developing AI standards… guided by principles set out in the NIST AI Risk Management Framework and United States Government National Standards Strategy for Critical and Emerging Technology' (NSSCET)."
+      }
+    ]
+  },
+  {
+    "question_category": "reasoning",
+    "question": "How does the NIST AI 100-5 plan distinguish between AI standardization topics that are urgently ready for standardization versus those needing significant foundational work?",
+    "expected_answer": "The plan uses a three-tier qualitative framework. Tier 1 (urgently needed and ready) includes topics like terminology and taxonomy, TEVV methods for bias, content provenance mechanisms, risk-based AI management, security and privacy, transparency, incident response, and training-data practices. Tier 2 (needed but requiring more scientific maturity) includes energy consumption of AI models, conformity assessment, and test/evaluation datasets. Tier 3 (needed but requiring significant foundational work) includes interpretability and explainability techniques and configuring human-AI interactions for effective decision-making. The distinction between tiers 2 and 3 is the degree of additional foundational scientific or technical research still required before standards development can begin.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-5 A Plan for Global Engagement on AI Standards",
+        "section_title": "1. Executive Summary",
+        "raw_text": "The plan defines three tiers of topics based on a qualitative assessment of need, impact of global involvement on the standards, urgency, and maturity of technical foundations. The tiers are: 1. Urgently needed and ready for standardization. These topics include terminology and taxonomy; testing, evaluation, verification, and validation (TEVV) methods and metrics, including crosscutting TEVV methods and TEVV for bias; mechanisms for enhancing awareness and transparency about the origins of digital content, including for synthetic content; riskbased management of AI systems; security and privacy; transparency among AI actors about system and data characteristics; incident response and recovery plans; and trainingdata practices. 2. Needed, but requiring more scientific work or maturity before standardization. These topics include energy consumption of AI models; conformity assessment with other standards; and testing and evaluation datasets. 3. Needed, but requiring significant foundational work. These topics include techniques for interpretability and explainability and configuring human-AI interactions for effective decision-making and operations."
+      }
+    ]
+  },
+  {
+    "question_category": "edge-case",
+    "question": "The NIST AI 100-5 plan describes building a 'global scientific network of AI standards experts.' What specific populations does it say should have strong representation in this network?",
+    "expected_answer": "The plan specifies that the network should ideally include strong representation from low- and middle-income countries. This network is envisioned to be called upon for standards-specific work, guidance on implementing standards, knowledge about potential impacts of standards, and scientific input on global AI issues as they emerge.",
+    "sources": [
+      {
+        "document_title": "NIST AI 100-5 A Plan for Global Engagement on AI Standards",
+        "section_title": "5.2.2. Global capacity-building",
+        "raw_text": "Build a global scientific network of AI standards experts. Collaboration on standards development could be facilitated by a scientific network of AI standards experts across the globe, ideally including strong representation from low- and middle-income countries. This network could be called upon for standardsspecific work, guidance on implementing standards, knowledge about potential impacts of standards, and possibly scientific input on global AI issues as they emerge."
+      }
+    ]
+  },
+  {
+    "question_category": "factual",
+    "question": "How does NIST AI 600-1 define 'confabulation' in the context of generative AI risks?",
+    "expected_answer": "Confabulation is defined as the production of confidently stated but erroneous or false content — known colloquially as 'hallucinations' or 'fabrications' — by which users may be misled or deceived.",
+    "sources": [
+      {
+        "document_title": "NIST AI 600-1 Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "section_title": "2. Overview of Risks Unique to or Exacerbated by GAI",
+        "raw_text": "Confabulation: The production of confidently stated but erroneous or false content (known colloquially as 'hallucinations' or 'fabrications') by which users may be misled or deceived."
+      }
+    ]
+  },
+  {
+    "question_category": "ambiguity",
+    "question": "What is the difference between 'harmful bias' and 'homogenization' as GAI risks, and why are they grouped together in NIST AI 600-1?",
+    "expected_answer": "Harmful bias refers to the amplification and exacerbation of historical, societal, and systemic biases, including performance disparities between subgroups or languages — possibly due to non-representative training data — that result in discrimination or incorrect presumptions about performance. Homogenization refers to undesired uniformity in system outputs that may be erroneous, lead to ill-founded decision-making, or amplify harmful biases. They are grouped together under 'Harmful Bias or Homogenization' because both relate to distortions in model output quality and fairness, often arising from the same root causes such as training data characteristics or extensive reuse of limited model architectures.",
+    "sources": [
+      {
+        "document_title": "NIST AI 600-1 Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "section_title": "2. Overview of Risks Unique to or Exacerbated by GAI",
+        "raw_text": "Harmful Bias or Homogenization: Amplification and exacerbation of historical, societal, and systemic biases; performance disparities between subgroups or languages, possibly due to nonrepresentative training data, that result in discrimination, amplification of biases, or incorrect presumptions about performance; undesired homogeneity that skews system or model outputs, which may be erroneous, lead to illfounded decisionmaking, or amplify harmful biases."
+      }
+    ]
+  },
+  {
+    "question_category": "negative",
+    "question": "Does NIST AI 600-1 provide specific cost estimates or budget allocations for implementing any of its suggested GAI risk management actions?",
+    "expected_answer": "No. NIST AI 600-1 does not contain specific cost estimates, budget figures, or financial allocations for implementing GAI risk management actions. The document provides suggested actions, risk descriptions, and mappings to AI RMF subcategories, but financial or budgetary guidance is not included.",
+    "sources": [
+      {
+        "document_title": "NIST AI 600-1 Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "section_title": "3. Suggested Actions to Manage GAI Risks",
+        "raw_text": "The following suggested actions target risks unique to or exacerbated by GAI. In addition to the suggested actions below, AI risk management activities and actions set forth in the AI RMF 1.0 and Playbook are already applicable for managing GAI risks. Organizations are encouraged to apply the activities suggested in the AI RMF and its Playbook when managing the risk of GAI systems."
+      }
+    ]
+  },
+  {
+    "question_category": "factual",
+    "question": "What are the six monitoring categories for post-deployment AI systems defined in NIST AI 800-4?",
+    "expected_answer": "The six monitoring categories are: (1) Functionality Monitoring — does the system continue to work as intended? (2) Operational Monitoring — does the system maintain consistent service across its infrastructure? (3) Human Factors Monitoring — is the system transparent to humans and high quality? (4) Security Monitoring — is the system secure against attacks and misuse? (5) Compliance Monitoring — does the system adhere to relevant regulations and directives? (6) Large-Scale Impacts Monitoring — does the system promote human flourishing?",
+    "sources": [
+      {
+        "document_title": "AI NIST AI 800-4 Challenges to the Monitoring of Deployed AI Systems",
+        "section_title": "Executive Summary",
+        "raw_text": "Section 2 introduces the six monitoring categories to support a more organized discussion and field of work on postdeployment monitoring: Functionality Monitoring: Does the system continue to work as intended? Operational Monitoring: Does the system maintain consistent service across its infrastructure? Human Factors Monitoring: Is the system transparent to humans and high quality? Security Monitoring: Is the system secure against attacks and misuse? Compliance Monitoring: Does the system adhere to relevant regulations and directives? Large-Scale Impacts Monitoring: Does the system promote human flourishing?"
+      }
+    ]
+  },
+  {
+    "question_category": "reasoning",
+    "question": "Why does NIST AI 800-4 argue that pre-deployment evaluations alone are insufficient to validate an AI system's safety and reliability?",
+    "expected_answer": "The report offers several converging reasons: pre-deployment evaluations are conducted in controlled environments that cannot account for real-world dynamics. AI outputs are non-deterministic — the system may exhibit subtly or even vastly different behavior under the same input conditions. Furthermore, some models have been found to detect when they are being evaluated and may behave differently under test conditions than in deployed settings, calling into question the validity of pre-deployment results. Real-world post-deployment issues have included hallucinations, sycophantic behavior, security exploits, and false claims — issues not always caught in controlled testing.",
+    "sources": [
+      {
+        "document_title": "AI NIST AI 800-4 Challenges to the Monitoring of Deployed AI Systems",
+        "section_title": "1. Introduction",
+        "raw_text": "These predeployment evaluations, while valuable, are predominantly conducted in controlled testing environments which are inherently limited. For example, AI outputs are typically nondeterministic, meaning the AI may exhibit subtly or even vastly different behavior under the same input conditions. Additionally, this does not take into account the dynamic and myriad variations of interactions that would occur in real use... In some instances, models have been found to detect when they are being evaluated, therefore raising the suspicion that these models operate differently under test conditions than in deployed settings."
+      }
+    ]
+  },
+  {
+    "question_category": "edge-case",
+    "question": "NIST AI 800-4 mentions a concept called 'interpretive drift' in the context of human factors monitoring gaps. What does this term describe?",
+    "expected_answer": "Interpretive drift refers to how users change their behavior over time as a result of using AI systems. It was raised by workshop attendees as a gap in the current understanding of human-AI interaction — specifically, as something that monitoring frameworks should document but for which sufficient tools and methods are currently lacking. The attendees framed it as: 'How can we document interpretive drift, i.e., how users change behavior based on using these systems?'",
+    "sources": [
+      {
+        "document_title": "AI NIST AI 800-4 Challenges to the Monitoring of Deployed AI Systems",
+        "section_title": "3.2.3 Human Factors",
+        "raw_text": "Attendees highlighted gaps in understanding how users interact with an AI system: 'How can [we] document interpretive drift, i.e., how users change behavior based on using these systems' and 'What [are] the implications to the experience of interacting with the model?'"
+      }
+    ]
+  },
+  {
+    "question_category": "factual",
+    "question": "What is explicitly stated as out of scope in the SSDF Community Profile for AI model development described in NIST SP 800-218A?",
+    "expected_answer": "The profile explicitly states that practices for the deployment and operation of AI systems with AI models are out of scope. Similarly, the broader data governance and management lifecycle — beyond cybersecurity practices specifically for training data used in AI model development — is also out of scope.",
+    "sources": [
+      {
+        "document_title": "NIST Special Publication 800 NIST SP 800-218A: Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+        "section_title": "Scope",
+        "raw_text": "This Profile's scope is AI model development, which includes data sourcing for, designing, training, fine-tuning, and evaluating AI models, as well as incorporating and integrating AI models into other software. Consistent with SSDF version 1.1 and EO 14110, practices for the deployment and operation of AI systems with AI models are out of scope. Similarly, while cybersecurity practices for training data and other forms of data being used for AI model development are in scope, the rest of the data governance and management life cycle is out of scope."
+      }
+    ]
+  },
+  {
+    "question_category": "reasoning",
+    "question": "Why does NIST SP 800-218A conclude that tracking model versioning and lineage for generative AI presents unique challenges compared to conventional software?",
+    "expected_answer": "While source code defining a model's architecture is amenable to standard secure versioning and reproducibility practices, the final model weights — which define the model's actual behavior — are only determined after training and fine-tuning are complete. This creates inherent limitations in tracking all aspects of data collection, processing, and training. Because the weights emerge from a data-driven process rather than being directly written as code, traditional version control provides only partial coverage, making complete lineage tracking difficult. The document recommends following secure practices wherever possible and explicitly documenting what cannot be covered.",
+    "sources": [
+      {
+        "document_title": "NIST Special Publication 800 NIST SP 800-218A: Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+        "section_title": "2. Using the SSDF Community Profile",
+        "raw_text": "Generative AI and dual-use foundation models present additional challenges in tracking model versioning and lineage. Source code for defining the model architecture and building model binaries is amenable to secure software engineering practices for versioning, lineage, and reproducibility. However, the final model weights are defined only after the model is trained and fine-tuned; this is where limitations in tracking all aspects of collection, processing, and training arise."
+      }
+    ]
+  },
+  {
+    "question_category": "ambiguity",
+    "question": "What kinds of AI systems does the NIST CI Profile concept note cite as examples of AI that could improve trustworthiness in critical infrastructure settings?",
+    "expected_answer": "The concept note lists several examples: AI agents for autonomous cybersecurity incident response with tested and verified guardrails; AI-enabled facility and plant monitoring systems hardened against adversarial input; AI-enhanced deterministic diagnostic assistants using AI bills of materials for auditable rationales; physics-informed neuro-symbolic AI systems for predicting and maintaining system stability with verifiable performance guarantees; autonomous robots and vehicles with multimodal sensing and redundant safety systems; AI-powered digital twins for managing distributed critical data centers during emergencies; AI optimization systems that degrade gracefully and alert human supervisors; and AI-enabled transparent compliance and risk monitoring systems with human-in-the-loop oversight.",
+    "sources": [
+      {
+        "document_title": "Concept Note: Artificial Intelligence Risk Management Framework: Trustworthy AI in Critical Infrastructure Profile.",
+        "section_title": "Main",
+        "raw_text": "Examples of AI systems that may be used in CI, with features that can improve their trustworthiness, include, but are not limited to: AI agents for autonomous cybersecurity incident response that include tested, evaluated, validated, and verified guardrails. AI-enabled facility and plant monitoring systems that are hardened against adversarial input and monitored for changes in the environment outside verified regions of validity. AI-enhanced deterministic diagnostic assistants that utilize AI bills of materials to provide traceable, auditable rationales for recommendations. Physics-informed neuro-symbolic AI systems for predicting and maintaining system stability that include verifiable performance guarantees. Autonomous robots and vehicles that leverage multimodal sensing, redundant safety systems, and deterministic fail-safe controllers. AI-powered digital twins for proactively managing distributed critical data centers to maintain operation during emergencies without overloading fragile utility infrastructure. AI optimization systems that degrade gracefully and transparently in response to adverse conditions while alerting human supervisors to take additional measures. AI-enabled, transparent, and explainable compliance and risk monitoring systems to improve governance responsiveness while maintaining human-in-the-loop oversight."
+      }
+    ]
+  },
+  {
+    "question_category": "negative",
+    "question": "Does the NIST CI Profile concept note specify a publication timeline or completion deadline for the full Trustworthy AI in Critical Infrastructure Profile?",
+    "expected_answer": "No. The concept note does not specify any deadline or publication timeline for completing the full profile. It describes the intended scope and goals of the profile, invites stakeholder participation via seminars and working sessions, and outlines the types of input NIST is seeking — but provides no schedule or target date for the profile's release.",
+    "sources": [
+      {
+        "document_title": "Concept Note: Artificial Intelligence Risk Management Framework: Trustworthy AI in Critical Infrastructure Profile.",
+        "section_title": "Main",
+        "raw_text": "NIST looks forward to engaging with industry, user groups, regulators, policymakers, academia, other stakeholders, and the broader community. Working collaboratively, NIST will develop a profile that provides all critical infrastructure sectors with increased confidence to deploy AI agents and tools as part of their overall strategy, and their developers and vendors with guidance and greater certainty to catalyze and highlight the development of innovative solutions that are based on managing risks and that are worthy of our trust."
+      }
+    ]
+  }
+]
