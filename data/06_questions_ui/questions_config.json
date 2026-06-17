@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "name": "AI Framework Basics",
+      "emoji": "📐",
+      "intro": "Understand how NIST structures AI risk management (NIST AI RMF) through GOVERN, MAP, MEASURE, and MANAGE.",
+      "questions": [
+        "What are the lifecycle and key dimensions of an AI system?",
+        "What are typical examples of AI system risks?",
+        "What are requirements for AI trustworthiness?",
+        "How does the NIST AI RMF help to manage AI risks?",
+        "Explain the core functions GOVERN, MAP, MEASURE, and MANAGE of the NIST AI RMF",
+        "Provide at least 3 examples for each core function."
+      ]
+    },
+    {
+      "name": "AI Attack Types",
+      "emoji": "⚔️",
+      "intro": "Adversarial machine learning (AML) is a subfield of cybersecurity focused on analyzing, anticipating, and preventing malicious attacks on AI systems. Discover the taxonomy of adversarial ML attacks and how NIST recommends defending against them.",
+      "questions": [
+        {
+          "label": "Provide me an overview of attacks grouped by predictive and generative AI.",
+          "answer": "NIST AI 100-2e2023 provides a structured overview of adversarial machine learning attacks organized by AI system type and attacker objective.\n\nPREDICTIVE AI — three objective dimensions:\n- Availability: Model Poisoning [Model Control], Clean-Label Poisoning [Training Data Control + Label Limit], Data Poisoning [Training Data Control], Energy-Latency Attacks [Query Access]\n- Integrity: Evasion [Test Data Control], Black-Box Evasion [Query Access], Clean-Label Backdoor [Training Data Control + Test Data Control + Label Limit], Clean-Label Poisoning [Training Data Control + Label Limit], Targeted Poisoning [Training Data Control], Backdoor Poisoning [Training Data Control + Test Data Control], Model Poisoning [Model Control]\n- Privacy: Model Extraction [Query Access — Model], Data Reconstruction [Query Access — Data], Membership Inference [Query Access — Data], Property Inference [Query Access — Data]\n\nGENERATIVE AI — four objective dimensions:\n- Availability: Indirect Prompt Injection [Resource Control], Denial of Service [Resource Control], Prompt Injection [Query Access], Increased Computation [Query Access], Data Poisoning [Training Data Control]\n- Integrity: Indirect Prompt Injection [Resource Control], Misaligned Inputs [Resource Control], Prompt Injection [Query Access], Targeted Poisoning [Training Data Control], Data Poisoning [Training Data Control], Backdoor Poisoning [Source Code Control]\n- Abuse (GenAI-specific): Indirect Prompt Injection [Resource Control], Prompt Injection / Jailbreaking [Query Access] — techniques include prefix injection, role-play (DAN), special encoding, refusal suppression, phishing, masquerading, spreading malware, historical distortion\n- Privacy — Model: Prompt Injection [Query Access], Prompt Extraction [Query Access]; Privacy — Data: Information Gathering [Query Access], Membership Inference [Query Access], Data Extraction [Query Access]; Privacy — Cross-Cutting: Backdoor Poisoning [Resource Control], Indirect Prompt Injection [Resource Control], Unauthorized Disclosure [Resource Control], Training Data Attacks [Resource Control]\n\n"
+        },
+        "What is ...?",
+        "What are typical defensive strategies against ...?",
+        "What are open challenges of defending AI attacks?"
+      ]
+    },
+    {
+      "name": "Secure AI Development Framework (SSDF)",
+      "emoji": "🔒",
+      "intro": "Learn about how the SSDF Community Profile defines actions of secure AI model development for producers and enterprise buyers of AI models and systems. It applied therefore the standard software development life cycle (SDLC) categories—Prepare Organization (PO), Protect Software (PS), Produce Well-Secured Software (PW), and Respond to Vulnerabilities (RV).",
+      "questions": [
+        "What is the scope of secure AI model development?",
+        "Summerize 10 measures of the SSDF Community Profile with their respective category IDs."
+      ]
+    },
+    {
+      "name": "GenAI & LLM Risks",
+      "emoji": "🤖",
+      "intro": "Explore the risks unique to generative AI systems and NIST's governance recommendations.",
+      "questions": [
+        "What are the 12 risks of GenAI??",
+        "Summerize some core measures to reduce GenAi risks with their respective NIST AI RMF function."
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "emoji": "📊",
+      "intro": "Find out what to measure after deploying an AI system and how to detect problems early by discovering functionality, operational, human factors, security, compliance and large scale monitoring.",
+      "questions": [
+        "What are the most important AI monitoring categories based on their frequency distribution?",
+        "Define each monitoring category for deployed AI systems: functionality, operational, human factors, security, compliance and large scale monitoring.",
+        "What are typical barriers exist in monitoring for deployed AI systems?",
+        "What are typical gaps exist in monitoring for deployed AI systems?"
+      ]
+    },
+    {
+      "name": "Critical Infrastructure",
+      "emoji": "🏭",
+      "intro": "Understand NIST's future trustworthiness requirements for AI in Critical Infrastructure (CI) across Information Technology (IT), Operational Technology (OT), and Industrial Control Systems (ICS)",
+      "questions": [
+        {
+          "label": "What are examples of AI systems that may be used in CI?",
+          "answer": "Examples of AI systems that may be used in Critical Infrastructure, with features that can improve their trustworthiness, include but are not limited to:\n\n- AI agents for autonomous cybersecurity incident response that include tested, evaluated, validated, and verified guardrails.\n- AI-enabled facility and plant monitoring systems that are hardened against adversarial input and monitored for changes in the environment outside verified regions of validity.\n- AI-enhanced deterministic diagnostic assistants that utilize AI bills of materials to provide traceable, auditable rationales for recommendations.\n- Physics-informed neuro-symbolic AI systems for predicting and maintaining system stability that include verifiable performance guarantees.\n- Autonomous robots and vehicles that leverage multimodal sensing, redundant safety systems, and deterministic fail-safe controllers.\n- AI-powered digital twins for proactively managing distributed critical data centers to maintain operation during emergencies without overloading fragile utility infrastructure.\n- AI optimization systems that degrade gracefully and transparently in response to adverse conditions while alerting human supervisors to take additional measures.\n- AI-enabled, transparent, and explainable compliance and risk monitoring systems to improve governance responsiveness while maintaining human-in-the-loop oversight."
+        },
+        "Which stakeholders are invited to contribute to the current development of the NIST AI RMF Trustworthy AI in CI?"
+      ]
+    },
+    {
+      "name": "Global AI Standards",
+      "emoji": "🌐",
+      "intro": "See how NIST plans to align AI standards internationally with ISO, OECD, and G7 frameworks.",
+      "questions": [
+        "Why do global AI standards matter?",
+        "Who can be stakeholders of global AI standards?",
+        "Provide some actions how to establish global AI standards."
+      ]
+    }
+  ]
+}

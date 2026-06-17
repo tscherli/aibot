@@ -4,15 +4,14 @@
 # Large data and model files
 data/04_vector_storage/index.faiss
 data/04_vector_storage/index.pkl
-data/04_vector_storage/child_store.jsonl
 experiments/parent_store.json
 
 # Raw PDFs (large binaries)
 data/01_raw_pdf/
 
 # Logs
-logs/
 rag.log
+logs/evalhistory/*.log
 
 # Python cache
 __pycache__/
