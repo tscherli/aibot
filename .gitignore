@@ -5,7 +5,7 @@
 data/04_vector_storage/index.faiss
 data/04_vector_storage/index.pkl
 data/04_vector_storage/child_store.jsonl
-tests/parent_store.json
+experiments/parent_store.json
 
 # Raw PDFs (large binaries)
 data/01_raw_pdf/
